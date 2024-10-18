@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3c45431b42.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Survey</title>
+</head>
+<body>
+    <form class="wrapper">
+        <div class="header">
+            <i class="fa-solid fa-clipboard-list"></i>
+            <h1>Survey</h1>
+        </div>
+        <div class="row single">
+            <label for="fname">First Name*</label>
+            <input type="text" id="fname">
+        </div>
+        <div class="row single">
+            <label for="lname">Last Name*</label>
+            <input type="text" id="lname">
+        </div>
+        <div class="row">
+            <label for="email">Email*</label>
+            <input type="email" id="email">
+        </div>
+        <div class="row">
+            <label for="rating">How would you rate your experience?</label>
+            <div class="stars">
+                <span class="star" data-value="1"><i class="fa-solid fa-star"></i></span>
+                <span class="star" data-value="2"><i class="fa-solid fa-star"></i></span>
+                <span class="star" data-value="3"><i class="fa-solid fa-star"></i></span>
+                <span class="star" data-value="4"><i class="fa-solid fa-star"></i></span>
+                <span class="star" data-value="5"><i class="fa-solid fa-star"></i></span>        
+            </div>
+        </div>
+        <div class="row">
+            <label>How was your experience? (Check all that apply)</label>
+            <div class="checkboxrow">
+                <div class="checkboxcolumn">
+                    <div class="checkbox">
+                        <input type="checkbox" value="friendly">
+                        <label for="friendly">Friendly?</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" value="supportive">
+                        <label for="supportive">Supportive?</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" value="knowledgeable">
+                        <label for="knowledgeable">Knowledgeable?</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" value="compassionate">
+                        <label for="compassionate">Compassionate?</label>
+                    </div>
+                </div>
+                <div class="checkboxcolumn">
+                    <div class="checkbox">
+                        <input type="checkbox" value="effecient">
+                        <label for="effecient">Efficient?</label>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox" value="friendly">
+                        <label for="friendly">Clear and direct?</label>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <button>Submit</button>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
